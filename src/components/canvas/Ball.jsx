@@ -41,7 +41,7 @@ const BallCanvas = ({ icon }) => {
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
       //loader while data is loading
       <Suspense fullback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} autoRotate />
         <Ball imgUrl={icon} />
       </Suspense>
       <Preload all />
